@@ -31,7 +31,14 @@ Once input is received, the application performs two parallel operations:
     3.  Fetches the generated response.
 *   **Result:** A rich, context-aware explanation is displayed alongside the static definition.
 
-
+### 3. Data Extraction Pipeline (Backend)
+The static JSON data was generated through a custom Python extraction pipeline:
+1.  **Source:** `6 - PDF Copy - English-Kokborok-Bengali Dictionary.pdf`.
+2.  **Extraction:** Python scripts (`scripts/build_dictionary.py`) use **`pdfplumber`** to read the PDF.
+3.  **Parsing:**
+    *   **Column-Awareness:** Splits pages into 4 columns to handle the dictionary layout.
+    *   **Regex Pattern Matching:** Identifies Headwords, Parts of Speech (n., v., adj.), and definitions.
+4.  **Output:** The structured data is saved as `dictionary.json`.
 
 ---
 
