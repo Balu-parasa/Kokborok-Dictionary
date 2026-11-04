@@ -44,6 +44,9 @@ The static JSON data was generated through a custom Python extraction pipeline:
 
 ## 🛠 Tech Stack
 
+
+Live Demo Link : https://kokborok-lexlator.vercel.app
+
 *   **Frontend:** React (Vite), TypeScript, Tailwind CSS
 *   **Data Processing:** Python (`pdfplumber`, `re`)
 *   **AI/NLP:** Google Gemini API (`@google/genai`), Web Speech API
